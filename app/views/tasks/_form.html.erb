@@ -5,9 +5,7 @@
   <%= f.text_field :details %>
   <% unless task.new_record? %>
     <%= f.label :completed %>
-    <%= task.completed %>
     <%= f.check_box :completed, {}, checked_value="1", unchecked_value="0" %>
-    <%= task.completed %>
   <% end %>
   <%= f.submit %>
 <% end %>
